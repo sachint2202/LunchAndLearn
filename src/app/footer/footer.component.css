@@ -1,0 +1,30 @@
+#sticky-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    /* background-color: red;
+    color: white;
+    text-align: center; */
+  }
+  .footer-container{
+      background-color: #ffd740;
+      
+      color: rgba(0,0,0,.87);
+      height: 40px;
+      font-family: sans-serif;
+    font-weight: 300;
+    letter-spacing: normal;
+    margin: 0;
+  }
+
+  .fr{
+     
+      float:right;
+  }
+  .mr-10{
+      margin: 10px 10px 10px 10px;
+  }
+  .pt-10{
+      padding-top: 10px;
+  }

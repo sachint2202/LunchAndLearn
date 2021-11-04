@@ -1,0 +1,27 @@
+.main-wrapper{
+    border: 1px solid darkgray;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px;
+}
+.content-wrapper{
+    border: 1px solid darkgray;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    width: 50%;
+}
+.heading-wrapper{
+    /* border: 1px solid darkgray;
+    border-radius: 10px; */
+    margin-left: 20px;
+    margin-top:10px;
+}
+.j-e{
+    justify-content: flex-end;
+    display: flex;
+}
+.form-heading{
+    margin:5px;
+    font-size: larger;
+}
