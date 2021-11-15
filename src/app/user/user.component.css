@@ -25,3 +25,18 @@
     margin:5px;
     font-size: larger;
 }
+.m-10{
+    margin:10px;
+}
+.jc-c{
+    justify-content: center;
+}
+.jc-between{
+    justify-content: space-between;
+}
+.d-f{
+    display: flex;
+}
+.d-if{
+    display: inline-flex;
+}

@@ -1,25 +1,49 @@
-<div class="main-wrapper" style = "display:flex;justify-content: space-between;">
-    <div style="display:inline-flex">
+<div class="main-wrapper d-f jc-between">
+    <div class="d-if">
     <h1><strong>{{userHeading}}</strong></h1>
     </div>
-    <div  style="display:inline-flex; ">
+    <div class="d-if">
         <button type="button" class="btn btn-primary" routerLink="/">Home</button>
     </div>   
 </div>
-<div class = "content-wrapper">
-    <form>
+<div class = "content-wrapper" >
+  <div class="alert alert-success" role="alert" id="alertmsg" *ngIf="alertOn" [innerHtml]="alertmsg">
+    A simple success alert—check it out!
+  </div>
+    <form #userForm = "ngForm" (ngSubmit)="onSubmit(userForm.value)">
         <div class="form-group">
-          <label for="exampleFormControlInput1">Name</label>
-          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
-        </div>
+          <label for="name">Name</label>
+          <div class="m-10">
+          <input type="text" class="form-control" name="name" id="name" placeholder="" ngModel>
+        </div></div>
         <div class="form-group">
-            <label for="exampleFormControlInput1">Gender</label>
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
-          </div>
+            <label for="gender">Gender</label>
+            <div class="m-10">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="gender" id="cb1" value="Male" ngModel checked>
+                <label class="form-check-label" for="cb1">Male</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="gender" id="cb2" value="Female" ngModel>
+                <label class="form-check-label" for="cb2">Female</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="gender" id="cb3" value="Others" ngModel>
+                <label class="form-check-label" for="cb3">Others</label>
+              </div>
+          </div></div>
           <div class="form-group">
-            <label for="exampleFormControlInput1">Designation</label>
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
-          </div>
-      
+            <label for="empId">Employee ID</label>
+            <div class="m-10">
+            <input type="number" class="form-control" name="empId" id="empId" placeholder="" ngModel>
+          </div></div>
+          <div class="form-group">
+            <label for="designation">Designation</label>
+            <div class="m-10">
+            <input type="text" class="form-control" name="designation" id="designation" placeholder="" ngModel>
+          </div></div>
+          <div class="m-10 jc-c d-f">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
       </form>
 </div>
