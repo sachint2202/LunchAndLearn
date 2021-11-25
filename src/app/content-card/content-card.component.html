@@ -1,0 +1,16 @@
+<div class="card-group">
+<!-- <ng-template *ngFor="let card of cardList"> -->
+    <div class="card" *ngFor="let card of cardList">
+        <div class="img-box">
+      <img class="card-img-top" [src]="card.cardImageSrc" alt={{card.cardAlt}}>
+    </div>
+      <div class="card-body">
+        <h5 class="card-title">{{card.cardTitle}}</h5>
+        <p class="card-text">{{card.cardText}}</p>
+        <div class="card-footer">
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+    </div>
+<!-- </ng-template> -->
+  </div>

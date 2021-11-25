@@ -16,6 +16,7 @@ import { HomeComponent } from './home/home.component';
 import { AdminComponent } from './admin/admin.component';
 import { UserComponent } from './user/user.component';
 import { FormsModule } from '@angular/forms';
+import { ContentCardComponent } from './content-card/content-card.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +25,8 @@ import { FormsModule } from '@angular/forms';
     FooterComponent,
     HomeComponent,
     AdminComponent,
-    UserComponent
+    UserComponent,
+    ContentCardComponent
   ],
   imports: [
     BrowserModule,
